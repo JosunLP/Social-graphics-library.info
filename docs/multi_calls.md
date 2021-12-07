@@ -7,7 +7,7 @@ The necessary parameters for creation are transferred to the multiGenerator as a
 ___
 
 ```
-new SocialGraphicsLibrary
+new SGL
         .multiGenerator(
             teamName,
             userName

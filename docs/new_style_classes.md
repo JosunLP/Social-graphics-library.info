@@ -30,7 +30,7 @@ ___
 
 ## The integration
 
-The new class is integrated in the `generator` method in the`SocialGraphicsLibrary` as a `case` in the `glc.ts` file.
+The new class is integrated in the `generator` method in the`SGL` as a `case` in the `sgl.ts` file.
 
 ___
 
@@ -86,4 +86,4 @@ the class must be entered in the glc file in the `generator` methods.
 
 Then just compile, integrate and it's done.
 
-![Example Gif](https://raw.githubusercontent.com/JosunLP/Social-graphics-library/master/assets/Demo.gif)
+![Example Gif](https://raw.githubusercontent.com/Social-graphics-library/Social-graphics-library/master/assets/Demo.gif)

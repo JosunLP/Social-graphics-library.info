@@ -8,10 +8,10 @@ slug: /
 ## The basic generator call
 
 The static function `generator` is used to generate a graphic
-called on the class `SocialGraphicsLibrary`:
+called on the class `SGL`:
 
 ```
-new SocialGraphicsLibrary
+new SGL
     .generator(
       teamName,
       mode,
@@ -19,7 +19,7 @@ new SocialGraphicsLibrary
       imgMode
       );
 
-new SocialGraphicsLibrary
+new SGL
     .generator(
       userName,
       teamName,
@@ -48,8 +48,6 @@ ___
       * Generates a Twitch cover photo
     * twitter-title
       * Generates a Twitter cover photo
-    * elavate-title
-      * Generates a Youtube cover picture
     * gaming
       * Generates a gaming logo
 

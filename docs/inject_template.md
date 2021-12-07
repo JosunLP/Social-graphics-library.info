@@ -8,7 +8,7 @@ sidebar_label: Inject Template (Experimental Feature)
 
 As an alternative to forking the project, it is possible to inject your own templates locally. To do this, simply install the NPM package with `npm i social-graphics-library`, then after the initialization a template can be injected with the following method:
 
-    new SocialGraphicsLibrary.inject([
+    new SGL.inject([
       {
         "callName": "template_name",
         "template": new Template()
