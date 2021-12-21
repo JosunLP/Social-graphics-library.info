@@ -45,6 +45,11 @@ const config = {
           {to: '/docs', label: 'Docs', position: 'left' },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            href: 'https://github.com/Social-graphics-library/Template-Generator',
+            label: 'Template Generator',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/Social-graphics-library/Social-graphics-library',
             label: 'GitHub',
             position: 'right',
