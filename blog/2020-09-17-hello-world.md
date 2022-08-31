@@ -13,5 +13,3 @@ tags: [hello, Update]
 This is a test post.
 
 A whole bunch of other information.
-
-
