@@ -1,10 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
+import HomepageFeatures from '@site/src/components/HomepageFeatures';
+
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -19,7 +20,7 @@ function HomepageHeader() {
   );
 }
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
@@ -29,8 +30,8 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <div className="downloads">
-          <a href="https://raw.githubusercontent.com/Social-graphics-library/Social-graphics-library/master/dist/sgl.js" target="_blank" download>
-            <button id="downloadScript" className="button button--outline button--secondary button--lg">Download Script</button>
+          <a href="https://www.npmjs.com/package/social-graphics-library" target="_blank">
+            <button id="downloadScript" className="button button--outline button--secondary button--lg">Download Package</button>
           </a>
           <div className="downloadsContent">
             clone the code from <a href="https://github.com/Social-graphics-library/Social-graphics-library" target="_blank">Github </a>
@@ -39,9 +40,9 @@ export default function Home() {
         </div>
         <div className="exampleImplementation">
           <div className="exampleInput">
-            Player Name:
+            <label htmlFor="uName">Player Name:</label>
             <input type="text" id="uName" alt="Name"></input>
-            Team Name:
+            <label htmlFor="tName">Team Name:</label>
             <input type="text" id="tName" alt="Name"></input>
             <button type="submit" className="button button--outline button--secondary" id="generate">Generate</button>
           </div>

@@ -42,8 +42,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {to: '/docs', label: 'Docs', position: 'left' },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/docs', label: 'Docs', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/Social-graphics-library/Template-Generator',
             label: 'Template Generator',

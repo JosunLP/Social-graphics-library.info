@@ -1,11 +1,17 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+import styles from './styles.module.css';
 
-const FeatureList = [
+type FeatureItem = {
+  title: string;
+  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  description: JSX.Element;
+};
+
+const FeatureList: FeatureItem[] = [
   {
     title: 'Working for a Community isn\'t easy',
-    Svg: require('../../static/img/3441.svg').default,
+    Svg: require('@site/static/img/3441.svg').default,
     description: (
       <>
         Equipping a constantly changing gaming community with the latest social media graphics is a huge effort.
@@ -15,7 +21,7 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('../../static/img/458.svg').default,
+    Svg: require('@site/static/img/458.svg').default,
     description: (
       <>
         By using the social graphics library in your own tools,
@@ -25,7 +31,7 @@ const FeatureList = [
   },
   {
     title: 'Modular and Simple',
-    Svg: require('../../static/img/666.svg').default,
+    Svg: require('@site/static/img/666.svg').default,
     description: (
       <>
         Thanks to the very clear template system, fresh ones can be created extreme quickly. The system is therefore very flexible!
@@ -34,11 +40,11 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -48,7 +54,7 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageFeatures(): JSX.Element {
   return (
     <section className={styles.features}>
       <div className="container">
